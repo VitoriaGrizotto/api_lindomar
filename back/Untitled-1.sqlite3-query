@@ -1,0 +1,49 @@
+-- database: c:\Users\58362979836\Documents\projeto01\back\db.sqlite3
+
+SELECT * FROM api_filmes;
+INSERT INTO api_genero (genre) 
+VALUES 
+    ('Ficção Científica'),
+    ('Romance'),
+    ('Mistério'),
+    ('Fantasia'),
+    ('Terror'),
+    ('Histórico'),
+    ('Biografia'),
+    ('Aventura');
+
+
+INSERT INTO api_classificacao (classific)
+VALUES
+    (10),
+    (11),
+    (12),
+    (13),
+    (14),
+    (15),
+    (16),
+    (17),
+    (18),
+    (20);
+
+INSERT INTO api_filmes (titulo, genre_id, ano, idioma, classific_id)
+VALUES 
+    ('A Origem', 1, '2010', 'Inglês', 1),
+    ('Matrix', 1, '1999', 'Inglês', 2),
+    ('Parasita', 4, '2019', 'Coreano', 3),
+    ('Interestelar', 1, '2014', 'Inglês', 4),
+    ('O Poderoso Chefão', 5, '1972', 'Inglês', 10),
+    ('Pulp Fiction', 5, '1994', 'Inglês', 5),
+    ('O Cavaleiro das Trevas', 6, '2008', 'Inglês', 9),
+    ('Clube da Luta', 7, '1999', 'Inglês', 8),
+    ('Forrest Gump', 7, '1994', 'Inglês', 1),
+    ('Um Sonho de Liberdade', 7, '1994', 'Inglês', 6),
+    ('Os Vingadores', 6, '2012', 'Inglês', 5),
+    ('O Rei Leão', 8, '1994', 'Inglês', 4),
+    ('Avatar', 1, '2009', 'Inglês', 3),
+    ('Star Wars: Episódio IV - Uma Nova Esperança', 1, '1977', 'Inglês', 3),
+    ('Titanic', 2, '1997', 'Inglês', 8),
+    ('Os Infiltrados', 5, '2006', 'Inglês', 4),
+    ('Coração Valente', 6, '1995', 'Inglês', 1),
+    ('Amnésia', 4, '2000', 'Inglês', 2),
+    ('Oldboy', 4, '2003', 'Coreano', 1);
